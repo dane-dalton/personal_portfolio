@@ -4,7 +4,7 @@ import { Navbar } from '../../common'
 function Header() {
 
   return (
-    <div className="flex-column">
+    <div className="flex-column bg-green-500 -mx-10">
       <div className="flex justify-between content-center mb-2">
         <div className="text-5xl">
           <a href="/" className="">Portfolio</a>
