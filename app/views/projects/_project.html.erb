@@ -1,29 +1,29 @@
 <div id="<%= dom_id project %>">
   <p class="my-5">
-    <strong class="block font-medium mb-1"><%= project.project_name %></strong>
+    <strong class="block font-bold mb-1"><%= project.project_name %></strong>
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Description:</strong>
+    <strong class="block font-bold mb-1">Description:</strong>
     <%= project.project_description %>
   </p>
 
   <% if action_name == "show" %>
     <p class="my-5">
-      <strong class="block font-medium mb-1">Live URL:</strong>
+      <strong class="block font-bold mb-1">Live URL:</strong>
       <%= project.project_url %>
     </p>
   <% end %>
 
   <% if action_name == "show" %>
     <p class="my-5">
-      <strong class="block font-medium mb-1">Repository:</strong>
+      <strong class="block font-bold mb-1">Repository:</strong>
       <%= project.project_code %>
     </p>
   <% end %>
 
   <% if action_name != "show" %>
-    <%= link_to "Show this project", project, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Show this project", project, class: "bg-transparent hover:bg-gray-500 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded" %>
     <%# <%= link_to 'Edit this project', edit_project_path(project), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
     <hr class="mt-6">
   <% end %>
