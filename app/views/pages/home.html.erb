@@ -2,9 +2,18 @@
   controller: "react"
 }) %>
 <div class="container flex justify-around mb-10">
-  <div class="w-1/3">
-    <h2 class="font-bold text-3xl">About Me</h2>
-    <p>This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. </p>
+  <div class="w-1/2 flex flex-col justify-around">
+    <h2 class="font-bold text-6xl">Welcome!</h2>
+    <div>
+      <h3 class="font-bold text-3xl mb-4">About Me</h3>
+      <p>Technology has always been a passion of mine. In middle school, I built computers with my friends to play games together. In high school, I took 4 years of Project Lead The Way, learning about CAD with Inventor, 3D printing, reverse engineering, material stress tests, digital electronics, breadboarding and soldering with logic gates, controller programming and so much more. I also took a coding class during this time, teaching me the foundations of Java, and joined Robotics Club to compete in First Tech Challenge. I have a group of lifelong friends with similar interests and goals, all thanks to these classes and activities.</p>
+      <br>
+      <p>I found that I understood my digital electronics class very well, which was my inspiration for pursuing an Electrical Engineering degree. After three semesters as an EE (without any failed courses), I found a passion for nature and rock climbing. I decided to make a leap and switch to an Environmental Science degree with a Biology minor.</p>
+      <br>
+      <p>After graduation, I found myself wanting to work with technology again. I love working with computers, and I have never had a better feeling than finally finding a solution to a problem that had taken me ages to solve. Thankfully, with so many friends working in the tech industry, they had given me some sources to learn from and mess around with. Once I started my journey with web/software development I fell in love. The Odin Project has taught me the foundations of fullstack web development, and has helped me achieve the skill set that I have today. </p>
+      <br>
+      <p>My career goal? One day I want to bridge my passion's between the environment and software, and to inspire others to work hard for what they want, even if they aren't on the "conventional" path.</p>
+    </div>
     <p class="font-bold">Contact: +1 (224) 829-8505 | danezdalton1@gmail.com</p>
   </div>
   <div class="w-1/3">
@@ -13,17 +22,17 @@
 </div>
 <div class="container flex justify-around">
   <div class="w-1/2 mb-10">
-    <h2 class="font-bold text-3xl">Current Database Design</h2>
+    <h2 class="font-bold text-3xl mb-4">Current Database Design</h2>
     <%= image_tag("basic_portfolio_dbdesign.png", class: "") %>
     <p><em>Created with <a href="https://dbdiagram.io/home" target="_blank">dbdiagram.io</a></em></p>
   </div>
   <div class="w-1/3">
-    <h2 class="font-bold text-3xl">Portfolio Roadmap</h2>
+    <h2 class="font-bold text-3xl mb-5">Portfolio Goals</h2>
     <ul>
-      <li><strong>-Add users, authentication, authorization.</strong> Only the admin should be able to post, edit, and delete projects.</li>
-      <li><strong>-Create blog, allow comments for posts.</strong> I would like a section to showcase what I am currently learning. This will be a great section to reflect and cement what I have learned, and perhaps it may help others.</li>
-      <li><strong>-Learn Three.js for 3D graphics.</strong> Three.js is the most interesting JavaScript library I have seen. It has the ability to make websites feel much more dynamic to a user, and so far the concept seem very easy to pick up.</li>
-      <li><strong>-Recreate the frontend with React.</strong> React is a JavaScript library/framework I have been wanting to learn since I started learning JavaScript. It is something I have touched, but in order to create a MVP, I built this website without it first.</li>
+      <li><strong>-Add users, authentication, authorization.</strong> Only the admin should be able to post, edit, and delete projects. SSO sign in would also be very nice, as it would allow users to sign in with their Google or Facebook accounts. This adds security, and convenience.</li>
+      <li><strong>-Create blog, allow comments for posts.</strong> I would like a section to showcase what I am currently learning. This will be a great section to reflect on and cement what I have learned, and perhaps it may help others.</li>
+      <li><strong>-Learn Three.js for 3D graphics.</strong> Three.js is the most interesting JavaScript library I have seen. It has the ability to make websites feel much more dynamic to a user, and so far the scene/camera/render model feels straight forward.</li>
+      <li><strong>-Recreate the frontend of this website with React.</strong> React is a JavaScript library/framework I have been wanting to learn since I started learning JavaScript. It is something I have spent some time messing around with, but in order to create a MVP, I built this website without it first.</li>
     </ul>
   </div>
 </div>
