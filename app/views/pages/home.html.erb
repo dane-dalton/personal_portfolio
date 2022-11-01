@@ -4,24 +4,26 @@
 <div class="container flex justify-around mb-10">
   <div class="w-1/3">
     <h2 class="font-bold text-3xl">About Me</h2>
-    <p>Here is some stuff about me</p>
+    <p>This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. This section will be an about me. The about me will go here. </p>
     <p class="font-bold">Contact: +1 (224) 829-8505 | danezdalton1@gmail.com</p>
   </div>
   <div class="w-1/3">
-    <h2 class="font-bold text-3xl">Image will go here</h2>
+    <%= image_tag("about_photo.jpg", class: "rounded-3xl shadow-black shadow-lg") %>
   </div>
 </div>
 <div class="container flex justify-around">
-  <div class="w-1/3">
-    <h2 class="font-bold text-3xl">Another Image will go here</h2>
-    <p>Perhaps database diagram?</p>
+  <div class="w-1/2 mb-10">
+    <h2 class="font-bold text-3xl">Current Database Design</h2>
+    <%= image_tag("basic_portfolio_dbdesign.png", class: "") %>
+    <p><em>Created with <a href="https://dbdiagram.io/home" target="_blank">dbdiagram.io</a></em></p>
   </div>
   <div class="w-1/3">
     <h2 class="font-bold text-3xl">Portfolio Roadmap</h2>
     <ul>
-      <li>-Add users, authentication, authorization</li>
-      <li>-Create blog, allow comments for posts</li>
-      <li>-Recreate the frontend with React</li>
+      <li><strong>-Add users, authentication, authorization.</strong> Only the admin should be able to post, edit, and delete projects.</li>
+      <li><strong>-Create blog, allow comments for posts.</strong> I would like a section to showcase what I am currently learning. This will be a great section to reflect and cement what I have learned, and perhaps it may help others.</li>
+      <li><strong>-Learn Three.js for 3D graphics.</strong> Three.js is the most interesting JavaScript library I have seen. It has the ability to make websites feel much more dynamic to a user, and so far the concept seem very easy to pick up.</li>
+      <li><strong>-Recreate the frontend with React.</strong> React is a JavaScript library/framework I have been wanting to learn since I started learning JavaScript. It is something I have touched, but in order to create a MVP, I built this website without it first.</li>
     </ul>
   </div>
 </div>
