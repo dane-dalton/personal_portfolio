@@ -79,3 +79,4 @@ end
 gem "pg"
 gem "tailwindcss-rails"
 gem "cssbundling-rails"
+gem "devise", "~> 4.8"
