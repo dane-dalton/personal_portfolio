@@ -6,12 +6,16 @@
     <h2 class="font-bold text-6xl text-gray-800">Welcome!</h2>
     <div>
       <h3 class="font-bold text-3xl mb-4 text-gray-800">About Me</h3>
+      <%# take this line out when roles are finished %>
+      <% if current_user %>
+        <p>Role: <%= current_user.role %></p>
+      <% end %>
       <p>Technology has always been a passion of mine. In middle school, I built computers with my friends to play games together. In high school, I took 4 years of Project Lead The Way, learning about CAD with Inventor, 3D printing, reverse engineering, material stress tests, digital electronics, breadboarding and soldering with logic gates, controller programming and so much more. I also took a coding class during this time, teaching me the foundations of Java, and joined Robotics Club to compete in First Tech Challenge. I have a group of lifelong friends with similar interests and goals, all thanks to these classes and activities.</p>
       <br>
       <p>I found that I understood my digital electronics class very well, which was my inspiration for pursuing an Electrical Engineering degree. After three semesters as an EE (without any failed courses), I found a passion for nature and rock climbing. I decided to make a leap and switch to an Environmental Science degree with a Biology minor.</p>
-      <br>
+      <br />
       <p>After graduation, I found myself wanting to work with technology again. I love working with computers, and I have never had a better feeling than finally finding a solution to a problem that had taken me ages to solve. Thankfully, with so many friends working in the tech industry, they had given me some sources to learn from and mess around with. Once I started my journey with web/software development I fell in love. The Odin Project has taught me the foundations of fullstack web development, and has helped me achieve the skill set that I have today. </p>
-      <br>
+      <br />
       <p>My career goal? One day I want to bridge my passion's between the environment and software, and to inspire others to work hard for what they want, even if they aren't on the "conventional" path.</p>
     </div>
     <p class="font-bold text-gray-800">Contact: +1 (224) 829-8505 | danezdalton1@gmail.com</p>

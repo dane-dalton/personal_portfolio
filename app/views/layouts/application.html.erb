@@ -12,10 +12,11 @@
   </head>
 
   <body class="mx-auto">
-    <div class="header-container mb-7">
-      <%= render 'pages/header' %>
-    </div>
+    <header class="header-container mb-7">
+      <%= render 'layouts/header' %>
+    </header>
     <main class="container mx-auto">
+      <%= render 'layouts/alerts' %>
       <%= yield %>
     </main>
   </body>
