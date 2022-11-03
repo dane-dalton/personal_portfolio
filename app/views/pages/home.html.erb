@@ -6,9 +6,9 @@
     <h2 class="font-bold text-6xl text-gray-800">Welcome!</h2>
     <div>
       <h3 class="font-bold text-3xl mb-4 text-gray-800">About Me</h3>
-      <%# take this line out when roles are finished %>
       <% if current_user %>
         <p>Role: <%= current_user.role %></p>
+        <p>Name: <%= current_user.name %>
       <% end %>
       <p>Technology has always been a passion of mine. In middle school, I built computers with my friends to play games together. In high school, I took 4 years of Project Lead The Way, learning about CAD with Inventor, 3D printing, reverse engineering, material stress tests, digital electronics, breadboarding and soldering with logic gates, controller programming and so much more. I also took a coding class during this time, teaching me the foundations of Java, and joined Robotics Club to compete in First Tech Challenge. I have a group of lifelong friends with similar interests and goals, all thanks to these classes and activities.</p>
       <br>

@@ -17,6 +17,8 @@
               <a href="https://www.linkedin.com/in/dane-dalton-8406b6180/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium" target="_blank">LinkedIn</a>
 
               <% if current_user %>
+                <%= link_to "Profile", user_path(current_user), class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium" %>
+            
                 <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium" %>
               <% else %>
                 <%= link_to "Sign Up", new_user_registration_path, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium" %>

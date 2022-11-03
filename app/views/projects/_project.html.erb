@@ -13,12 +13,15 @@
       <strong class="block font-bold mb-1">Live URL:</strong>
       <%= project.project_url %>
     </p>
-  <% end %>
-
-  <% if action_name == "show" %>
+  
     <p class="my-5">
       <strong class="block font-bold mb-1">Repository:</strong>
       <%= project.project_code %>
+    </p>
+
+    <p class="my-5">
+      <strong class="block font-bold mb-1">Created by:</strong>
+      <%= project.user.email %>
     </p>
   <% end %>
 
